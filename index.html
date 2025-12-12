@@ -1,47 +1,134 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>築地貝徳</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        color: #f6f0e6;
-        background:
-          linear-gradient(180deg, rgba(12, 10, 8, 0.9), rgba(12, 10, 8, 0.8)),
-          url("https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1600&q=80")
-            center/cover fixed;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      main {
-        max-width: 640px;
-        padding: 2.75rem;
-        text-align: center;
-        background: rgba(1, 1, 1, 0.4);
-        border-radius: 16px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-      }
-      h1 {
-        margin-bottom: 0.75rem;
-        font-size: 2.75rem;
-        letter-spacing: 0.08em;
-      }
-      p {
-        line-height: 1.6;
-        font-size: 1.125rem;
-        margin: 0;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>築地貝徳 | 焼貝と京野菜</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-en">TSUKIJI KAITOKU</span>
+        <span class="brand-ja">築地貝徳</span>
+      </div>
+      <nav class="nav">
+        <a href="#concept">コンセプト</a>
+        <a href="#menu">コース</a>
+        <a href="#gallery">店内</a>
+        <a href="#info">アクセス</a>
+        <a class="pill" href="#reserve" aria-label="LINEで予約">LINE予約</a>
+      </nav>
+    </header>
     <main>
-      <h1>築地開拓ホームページ</h1>
-      <p>焼けた貝の香りを想像しながら、GitHub Pages に新しい味をお届けします。準備が整い次第、ここに詳しい情報を追加していきます。</p>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Tsukiji / Shellfish</p>
+          <h1>築地貝徳</h1>
+          <p class="reading">つきじかいとく</p>
+          <p
+            class="lead"
+            data-typing
+            data-text="焼貝と季節の京野菜、そして飲み放題で一万円。暗めの照明に包まれた、少しあやしい隠れ家で貝の香りをゆっくり愉しむ夜をどうぞ。"
+          >
+            焼貝と季節の京野菜、そして飲み放題で一万円。暗めの照明に包まれた、少しあやしい隠れ家で貝の香りをゆっくり愉しむ夜をどうぞ。
+          </p>
+          <div class="cta">
+            <a href="#reserve" aria-label="LINEで予約">LINEで予約</a>
+            <small>※LINEからのご予約がメインです。メッセージにてご案内いたします。</small>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-main">
+            <img src="dorachan.png" alt="築地貝徳の焼貝" loading="lazy" />
+            <span class="tag">炭火で焼く貝の香り</span>
+          </div>
+          <div class="hero-side">
+            <figure>
+              <img src="desplay.png" alt="入口のディスプレイ" loading="lazy" />
+              <figcaption>暖簾をくぐると、やわらかな灯り</figcaption>
+            </figure>
+            <figure>
+              <img src="sudare.jpg" alt="簾越しの店内" loading="lazy" />
+              <figcaption>簾越しに覗くカウンター席</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="story" id="concept">
+        <article class="card">
+          <h2>コンセプト</h2>
+          <p>
+            築地で仕入れた貝と季節の京野菜を、炭火とだしで丁寧に。肩肘張らずに楽しめる一皿と、お酒が進む小鉢をご用意しています。
+          </p>
+          <div class="chips">
+            <span>炭火焼き</span>
+            <span>京野菜</span>
+            <span>築地仕入れ</span>
+          </div>
+        </article>
+        <article class="card line-card" id="menu">
+          <h2>おまかせコース</h2>
+          <p>焼貝と季節の京野菜、飲み放題付きでお一人様 10,000円。</p>
+          <p class="muted">内容は仕入れで変わります。お好みやアレルギーはお気軽にお知らせください。</p>
+        </article>
+      </section>
+
+      <section class="gallery" id="gallery" aria-label="店内と料理の写真">
+        <h2>店内と料理</h2>
+        <div class="gallery-grid">
+          <figure>
+            <img src="aoyagi.jpg" alt="青柳の盛り合わせ" loading="lazy" />
+            <figcaption>青柳</figcaption>
+          </figure>
+          <figure>
+            <img src="desplay.png" alt="入口のディスプレイ" loading="lazy" />
+            <figcaption>ディスプレイ</figcaption>
+          </figure>
+          <figure>
+            <img src="sudare.jpg" alt="簾越しの店内" loading="lazy" />
+            <figcaption>簾越しの店内</figcaption>
+          </figure>
+          <figure>
+            <img src="tennnai.jpg" alt="店内のカウンター" loading="lazy" />
+            <figcaption>店内のカウンター</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-grid" id="info">
+        <article class="card">
+          <h2>場所</h2>
+          <p>東京都中央区築地4-9-6 1F</p>
+          <p class="muted">東京メトロ築地駅 徒歩5分</p>
+          <div class="badge">隠れ家カウンター</div>
+        </article>
+
+        <article class="card">
+          <h2>営業時間</h2>
+          <ul>
+            <li>18:00 - 24:00</li>
+            <li>定休日なし</li>
+          </ul>
+          <p class="muted">お席に限りがあるため、事前のご連絡をおすすめします。</p>
+        </article>
+
+        <article class="card">
+          <h2>おすすめ</h2>
+          <p>焼貝と季節の京野菜、飲み放題付きのコース</p>
+          <p class="price">お一人様 10,000円</p>
+          <p class="muted">仕入れ状況により内容が変わります。</p>
+        </article>
+
+        <article class="card">
+          <h2 id="reserve">ご予約</h2>
+          <p>LINEでのご予約を承ります。静かなカウンター席でご案内します。</p>
+          <a class="line-button" href="#">LINEで予約する</a>
+          <p class="muted">コース内容やアレルギーは事前にお知らせください。</p>
+        </article>
+      </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
